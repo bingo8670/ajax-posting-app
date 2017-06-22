@@ -1,0 +1,25 @@
+<p>
+  <a id="my-open-click">Open</a>
+</p>
+
+<div id="foo" style="border: 1px solid red;">
+  <a id="my-hide-click">hide</a>
+  <p>bar</p>
+</div>
+
+<script>
+  $("#foo").hide();
+
+  $("#my-open-click").click(function(){
+    $("#foo").show();
+  })
+
+  $("#my-hide-click").click(function(){
+    $("#foo").hide();
+  })
+</script>
+
+<!-- 请试试看把 hide 和 show 分别改成
+♣	fadeOut 和 fadeIn
+♣	slideUp 和 slideDown
+会有不同的动画效果 -->
